@@ -17,9 +17,9 @@ const OrderSearchApp = () => {
   };
 
   return (
-    <div className="order-search-app">
+    <div className="container">
       <h1>Search</h1>
-      <SearchBar onSearch={handleSearch} />
+      <SearchBar onSearch={handleSearch} totalItems={filteredOrders.length} />
       <OrderTable orders={filteredOrders} />
     </div>
   );

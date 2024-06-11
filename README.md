@@ -5,6 +5,7 @@ This is assignment to create a web application with ReactJS
 To set up a new React project using this command `npx create-react-app assignment-fe-reactjs`
 
 ### Install Dependencies
+- pico css `npm install @picocss/pico`
 
 
 ## Available Scripts

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const SearchBar = ({ onSearch }) => {
+const SearchBar = ({ onSearch, totalItems }) => {
     // const [period, setPeriod] = useState('');
     // const [status, setStatus] = useState('');
     const [startDate, setStartDate] = useState('');
@@ -10,7 +10,9 @@ const SearchBar = ({ onSearch }) => {
         onSearch(startDate, endDate);
     };
     return (
-        <div className='search-bar'>
+        <div className='search-bar-container'>
+            <div className="total-items">Total Items: {totalItems}</div>
+            <div className="search-bar">
             Period
             <select>
                 <option value="Transmission">Transmission</option>
@@ -33,7 +35,8 @@ const SearchBar = ({ onSearch }) => {
                 onChange={e => setEndDate(e.target.value)}
                 placeholder="End Date"
             />
-            <button onClick={handleSearch}>Search</button>
+            <button onClick={handleSearch} className="contrast">Search</button>
+            </div>
         </div>
     )
 
