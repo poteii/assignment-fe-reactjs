@@ -4,6 +4,9 @@ This is assignment to create a web application with ReactJS
 ## Setup project
 To set up a new React project using this command `npx create-react-app assignment-fe-reactjs`
 
+### Install Dependencies
+
+
 ## Available Scripts
 
 In the project directory, you can run:
